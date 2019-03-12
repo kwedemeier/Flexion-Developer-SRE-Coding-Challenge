@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Heat and Temperature</title>
+		<style>
+			body {
+				background: MidnightBlue;
+				font: bold 25px helvetica, arial, sans-serif;
+				text-align: center;
+				color: Lavender;
+				text-shadow: 2px 2px 4px #000000;
+				font-variant: small-caps;
+			}
+			label,input {
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				padding: 15px 0 15px 0;
+			}
+			input,button {
+				background-color: white;
+				color: black;
+				padding: 7px 14px;
+				border-radius:4px;
+				border:1px solid #AAAAAA;
+			}
+			#Submit {
+				margin-top: 30px;
+			}
+		</style>
+		<script type="text/javascript" src="convert.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body onload="main()">
+		<div id="main">
+			<h1>Conversion Time!</h1>
+			<label for="InTemp">Input Temperature:</label>
+			<input id="InTemp" type="text" />
+			<label for="Target">Target Units:</label>
+			<input type="text" id="Target" />
+			<label for="Student">Student Response:</label>
+			<input id="Student" type="number" />
+			<button id="Submit" type="submit" onclick="submit()">Submit</button>
+			<button id="Clear" type="button" onclick="clear()">Clear</button>
+			<div id="Output"></div>
+		</div>
+	</body>
+</html>
+	
